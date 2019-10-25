@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gallery thumbFolder="images/thumbs" fullFolder="images/full" thumbsGap="10" thumbWidth="151" thumbHeight="90" thumbBorder="true" thumbBorderColor="0xffffff">
+	<images>
+		<image thumbUrl="1.jpg" imageUrl="1-1.jpg" textLabel="image_1" link="http://yahoo.com" description="Image description"/>
+		<image thumbUrl="2.jpg" imageUrl="2.swf" textLabel="image_2" link="http://google.com" description="Image description"/>
+		<image thumbUrl="3.jpg" imageUrl="3-1.jpg" textLabel="image_3" link="http://boston.com" description="Image description"/>
+		<image thumbUrl="4.jpg" imageUrl="4-1.jpg" textLabel="image_4" link="http://bbc.com" description="Image description"/>
+		<image thumbUrl="5.jpg" imageUrl="5-1.jpg" textLabel="image_5" link="http://bing.com" description="Image description"/>
+		<image thumbUrl="6.jpg" imageUrl="6-1.jpg" textLabel="image_6" link="http://clusty.com" description="Image description"/>
+		<image thumbUrl="7.jpg" imageUrl="7-1.jpg" textLabel="image_7" link="http://dogpile.com" description="Image description"/>
+		<image thumbUrl="8.jpg" imageUrl="8-1.jpg" textLabel="image_8" link="http://altavista.com" description="Image description"/>		
+	</images>
+</gallery>

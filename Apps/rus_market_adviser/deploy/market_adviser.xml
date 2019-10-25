@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<market name="MICEX">
+		<item>
+			<code><![CDATA[GAZP]]></code>
+			<name><![CDATA[ГАЗПРОМ ао]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[LKOH]]></code>
+			<name><![CDATA[ЛУКОЙЛ]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Если превысит 1 774,54]]></price>
+			<trend><![CDATA[Long]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[SBER]]></code>
+			<name><![CDATA[Сбербанк]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[GMKN]]></code>
+			<name><![CDATA[ГМКНорНик]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Если превысит 5 095,16]]></price>
+			<trend><![CDATA[Long]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[CHMF]]></code>
+			<name><![CDATA[СевСт-ао]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[HYDR]]></code>
+			<name><![CDATA[ГМКНорНик]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Если превысит 1,3056]]></price>
+			<trend><![CDATA[Long]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[MTSI]]></code>
+			<name><![CDATA[МТС-ао]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		
+		
+		
+		<item>
+			<code><![CDATA[GMKN]]></code>
+			<name><![CDATA[ГМКНорНик]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Если превысит 5 095,16]]></price>
+			<trend><![CDATA[Long]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[CHMF]]></code>
+			<name><![CDATA[СевСт-ао]]></name>
+			<signal><![CDATA[SELL]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[HYDR]]></code>
+			<name><![CDATA[ГМКНорНик]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Если превысит 1,3056]]></price>
+			<trend><![CDATA[Long]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[MTSI]]></code>
+			<name><![CDATA[МТС-ао]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+	</market>
+	<market name="INDEX">
+		<item>
+			<code><![CDATA[RTSI]]></code>
+			<name><![CDATA[(Russia)  Индекс РТС]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+		<item>
+			<code><![CDATA[SP500]]></code>
+			<name><![CDATA[(USA) S&P 500]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>
+	</market>
+	<market name="COMMODITIES">
+		<item>
+			<code><![CDATA[BRENT]]></code>
+			<name><![CDATA[Brent (Нефть)]]></name>
+			<signal><![CDATA[BUY]]></signal>
+			<price><![CDATA[Не дороже  72,03]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>		
+	</market>
+	<market name="FOREX">
+		<item>
+			<code><![CDATA[EUR/USD]]></code>
+			<name><![CDATA[EUR/USD]]></name>
+			<signal><![CDATA[HOLD]]></signal>
+			<price><![CDATA[HOLD]]></price>
+			<trend><![CDATA[Consolidation]]></trend>
+		</item>		
+	</market>
+</data>

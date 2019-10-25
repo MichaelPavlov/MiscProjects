@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:components="com.hillelcoren.components.*"	 
+	verticalScrollPolicy="off"
+	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10"
+	width="445" height="538">
+	
+	<mx:Script>
+		<![CDATA[
+			import de.ameria.cairngorm.model.StarwallModelLocator;
+			
+			[Bindable]
+			private var model:StarwallModelLocator = StarwallModelLocator.getInstance();
+			
+			private function autoCompleteChangeHandler(event:Event):void {
+				switch (event.currentTarget) {
+					case this.yourName : {
+						this.yourName.text = event.currentTarget.selectedItem.name;						
+						break;						
+					}
+					
+					case this.yourLastName : {
+						
+						break;						
+					}
+				}
+			}
+			
+			
+		]]>
+	</mx:Script>
+	
+	
+	<mx:VBox paddingBottom="5" paddingLeft="5" paddingRight="5" paddingTop="5" 
+		width="100%" height="100%" verticalGap="5"
+		verticalScrollPolicy="off">
+		
+		<mx:Label text="Your name" fontSize="17" textDecoration="underline"/>
+		
+		<mx:VBox paddingBottom="5" paddingLeft="5" paddingRight="5"
+			verticalGap="3"
+			width="100%" height="50">			
+			<components:AutoComplete id="yourName" dataProvider="{ model.participants }"
+				matchType="anyPart"
+				allowEditingNewValues="true" allowDuplicates="false" allowNewValues="true"				
+				labelField="name" selectedItemStyleName="none" 
+				width="100%"
+				
+				change="autoCompleteChangeHandler(event)"/>
+	   		<mx:Label text="given name" />
+		 </mx:VBox>
+		 
+		 <mx:VBox paddingBottom="5" paddingLeft="5" paddingRight="5" 
+		 	verticalGap="3"
+			width="100%" height="50">
+			<components:AutoComplete id="yourLastName" dataProvider="{ model.participants }"
+				allowEditingNewValues="true" 
+                labelField="name" selectedItemStyleName="none"
+                change="autoCompleteChangeHandler(event)"
+                width="100%"/>
+			<mx:Label text="family name" />
+		</mx:VBox>
+		
+		<mx:Label text="Your connection" fontSize="17" textDecoration="underline"/>
+		
+		<mx:VBox paddingBottom="5" paddingLeft="5" paddingRight="5"
+			verticalGap="3" 
+			width="100%" height="50">
+			<components:AutoComplete id="friendName" dataProvider="{ model.participants }"
+				allowEditingNewValues="true"
+                labelField="name" selectedItemStyleName="none"
+                change="autoCompleteChangeHandler(event)"
+                width="100%"/>
+			<mx:Label text="given name" />
+		</mx:VBox>
+		
+		<mx:VBox paddingLeft="5" paddingRight="5" 
+			verticalGap="3"
+			width="100%" height="50">
+			<components:AutoComplete id="friendLastName" dataProvider="{ model.participants }"
+				allowEditingNewValues="true"
+                labelField="name" selectedItemStyleName="none"
+                change="autoCompleteChangeHandler(event)"
+                width="100%"/>
+			<mx:Label text="family name" />
+		</mx:VBox>
+		
+		<mx:Button label="confirm"/>
+		
+		<mx:Label text="Connections" fontSize="17" textDecoration="underline"/>
+		
+		<mx:DataGrid width="100%" height="100%"
+			headerHeight="0" 
+			 
+			dataProvider="{model.connections}">
+			<mx:columns>
+				<mx:DataGridColumn dataField="name"/>
+				<mx:DataGridColumn dataField="country"/>
+			</mx:columns>
+		</mx:DataGrid>
+		
+	</mx:VBox>
+	
+</mx:Panel>

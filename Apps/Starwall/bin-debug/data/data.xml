@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<participants>
+	<participant name="Vasja" lastName="Pupkin" id="1" country="India">
+		<connections>
+			<connection>2</connection>
+			<connection>5</connection>
+			<connection>6</connection>
+		</connections>
+	</participant>
+	<participant name="Petya" lastName="Vasechkin" id="2" country="Niggeria">
+		<connections>
+			<connection>5</connection>
+			<connection>4</connection>
+			<connection>3</connection>			
+		</connections>
+	</participant>
+	<participant name="Bisi" lastName="Silva" id="3" country="Lagos">
+		<connections>
+			<connection>4</connection>
+			<connection>3</connection>
+		</connections>
+	</participant>
+	<participant name="Dalli" lastName="Hadad" id="4" country="Iraq">
+		<connections>
+			<connection></connection>
+		</connections>
+	</participant>
+	<participant name="Vasja" lastName="Pupkin" id="5" country="Yemen">
+		<connections>
+			<connection>4</connection>
+			<connection>3</connection>
+		</connections>
+	</participant>
+	<participant name="António" lastName="Correia" id="6" country="Bahrain">
+		<connections>
+			<connection>7</connection>
+			<connection>6</connection>
+		</connections>
+	</participant>
+</participants>

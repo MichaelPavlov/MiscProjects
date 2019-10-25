@@ -1,0 +1,285 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.4
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Jul 06, 2010 at 03:07 AM
+-- Server version: 5.1.47
+-- PHP Version: 5.2.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `gold_jenny`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `friends`
+--
+
+DROP TABLE IF EXISTS `friends`;
+CREATE TABLE `friends` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `UserID` int(11) NOT NULL DEFAULT '0',
+  `FriendID` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=110 ;
+
+--
+-- Dumping data for table `friends`
+--
+
+INSERT INTO `friends` (`ID`, `UserID`, `FriendID`) VALUES
+(1, 10, 24),
+(2, 39, 36),
+(3, 11, 39),
+(4, 21, 87),
+(5, 3, 83),
+(6, 79, 11),
+(7, 4, 44),
+(8, 73, 20),
+(9, 92, 23),
+(10, 57, 27),
+(11, 11, 50),
+(12, 53, 16),
+(13, 52, 74),
+(14, 81, 98),
+(15, 25, 72),
+(16, 81, 34),
+(17, 96, 19),
+(18, 70, 6),
+(19, 58, 90),
+(20, 92, 60),
+(21, 72, 70),
+(22, 71, 76),
+(23, 14, 44),
+(24, 95, 6),
+(25, 66, 51),
+(26, 32, 77),
+(27, 1, 85),
+(28, 93, 53),
+(29, 58, 73),
+(30, 51, 83),
+(31, 45, 31),
+(32, 16, 40),
+(33, 49, 86),
+(34, 46, 6),
+(35, 75, 38),
+(36, 66, 47),
+(37, 8, 37),
+(38, 23, 22),
+(39, 80, 17),
+(40, 27, 45),
+(41, 68, 59),
+(42, 22, 69),
+(43, 43, 14),
+(44, 21, 1),
+(45, 87, 71),
+(46, 83, 31),
+(47, 2, 99),
+(48, 71, 50),
+(49, 84, 17),
+(50, 56, 59),
+(51, 54, 22),
+(52, 6, 61),
+(53, 58, 28),
+(54, 82, 37),
+(55, 44, 9),
+(56, 82, 12),
+(57, 67, 3),
+(58, 80, 10),
+(59, 17, 1),
+(60, 11, 3),
+(61, 71, 93),
+(62, 34, 72),
+(63, 92, 4),
+(64, 22, 75),
+(65, 20, 78),
+(66, 34, 74),
+(67, 99, 39),
+(68, 34, 57),
+(69, 66, 16),
+(70, 94, 10),
+(71, 25, 76),
+(72, 21, 91),
+(73, 79, 100),
+(74, 1, 95),
+(75, 1, 11),
+(76, 97, 71),
+(77, 4, 30),
+(78, 43, 95),
+(79, 34, 65),
+(80, 70, 54),
+(81, 42, 3),
+(82, 27, 41),
+(83, 41, 60),
+(84, 98, 7),
+(85, 76, 91),
+(86, 16, 100),
+(87, 66, 37),
+(88, 91, 44),
+(89, 36, 92),
+(90, 39, 36),
+(91, 3, 36),
+(92, 7, 7),
+(93, 66, 50),
+(94, 1, 99),
+(95, 15, 71),
+(96, 52, 57),
+(97, 74, 78),
+(98, 97, 15),
+(99, 38, 94),
+(100, 21, 14),
+(101, 14, 9),
+(102, 14, 73),
+(103, 101, 58),
+(104, 101, 28),
+(105, 101, 39),
+(106, 101, 73),
+(107, 101, 20),
+(108, 101, 78),
+(109, 104, 58);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(100) NOT NULL DEFAULT '',
+  `LastName` varchar(100) NOT NULL DEFAULT '',
+  `Email` varchar(150) NOT NULL DEFAULT '',
+  `Password` varchar(150) NOT NULL DEFAULT '',
+  `Photo` varchar(200) DEFAULT '',
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=114 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `FirstName`, `LastName`, `Email`, `Password`, `Photo`) VALUES
+(1, 'Hanae', 'Sopoline', 'purus.mauris.a@eratVivamusnisi.com', 'LIE14RND7UQ', ''),
+(2, 'Simone', 'Bo', 'Quisque.porttitor.eros@Aliquam.edu', 'OVW23JQG0LA', ''),
+(3, 'Jeanette', 'Randall', 'mi.lacinia@consectetuermaurisid.edu', 'QDJ39ZGA7OG', ''),
+(4, 'Amery', 'Marcia', 'lorem.eget.mollis@liberomauris.com', 'XRN91NLX9GW', ''),
+(5, 'Macaulay', 'Jin', 'tempus.mauris@eratvolutpatNulla.org', 'VDS56YQI7NV', ''),
+(6, 'Ria', 'Rhea', 'molestie.tellus.Aenean@orci.org', 'VEN84JLX8FT', ''),
+(7, 'Nora', 'Steven', 'erat.neque@cursusNunc.org', 'NVW23RCD4OM', ''),
+(8, 'Blake', 'Caryn', 'per@massaIntegervitae.org', 'APP87IPR9LG', ''),
+(9, 'Avram', 'Xandra', 'in.consectetuer.ipsum@elementumategestas.com', 'NDK96WAW1HN', ''),
+(10, 'Francis', 'Wyatt', 'neque.et@odiovel.org', 'WAJ74PWL3TG', ''),
+(11, 'Hedwig', 'Aileen', 'blandit.at.nisi@ornareplacerat.edu', 'IRB59OVX1TM', ''),
+(12, 'Lane', 'Isaiah', 'Donec@egetmetusIn.edu', 'JYN76UDS5QD', ''),
+(13, 'Cleo', 'Shafira', 'mollis.lectus@sedhendrerita.ca', 'LUT55FEZ5UU', ''),
+(14, 'Maris', 'Shelley', 'rutrum@atrisus.com', 'EBZ67DXO5UL', ''),
+(15, 'Kendall', 'Mariam', 'libero.nec.ligula@Inornare.ca', 'QQX14RVH8KQ', ''),
+(16, 'Rahim', 'Mona', 'ipsum.porta.elit@Donecnibh.org', 'UKC32NXW4FG', ''),
+(17, 'Taylor', 'Brendan', 'turpis.nec.mauris@ultrices.ca', 'RXG53XIA7ER', ''),
+(18, 'Courtney', 'Naomi', 'at.iaculis@eliteratvitae.ca', 'HRS69YPA8DB', ''),
+(19, 'Velma', 'Brielle', 'tristique.senectus.et@sapienmolestie.edu', 'HPE97WFM2WG', ''),
+(20, 'Barrett', 'Nichole', 'Donec.luctus@Nullafacilisi.org', 'JVS29TDC4ZM', ''),
+(21, 'Quinn', 'Carlos', 'ligula.Nullam.feugiat@vitaevelit.edu', 'FYQ48WPN3JX', ''),
+(22, 'Lavinia', 'Allistair', 'Mauris@nequeInornare.com', 'NQL96XTU6DD', ''),
+(23, 'Hunter', 'Emerald', 'molestie@fermentumrisusat.edu', 'TKS17QSU9CN', ''),
+(24, 'Hilary', 'Janna', 'tincidunt@sapiengravidanon.org', 'VUK59OXF8HD', ''),
+(25, 'Mikayla', 'John', 'habitant.morbi.tristique@a.ca', 'VTP78CDH1EF', ''),
+(26, 'Candice', 'Sade', 'mi@eget.ca', 'UMB67EIG0KL', ''),
+(27, 'Barry', 'Christine', 'mi@Nuncpulvinararcu.org', 'XFY03EEF2DL', ''),
+(28, 'Rachel', 'Xaviera', 'ut@consequat.edu', 'FFH26TJV0EP', ''),
+(29, 'Barclay', 'Shaeleigh', 'orci.tincidunt@nislQuisquefringilla.org', 'ZSW18IZV5FV', ''),
+(30, 'Jane', 'Dante', 'pellentesque@Donecsollicitudin.com', 'HRD38TKS2RN', ''),
+(31, 'Price', 'Giacomo', 'sit.amet@mus.com', 'OQD18ZOC0GQ', ''),
+(32, 'Florence', 'Laurel', 'et.arcu.imperdiet@Aeneaneuismodmauris.ca', 'LPP63DLQ6YW', ''),
+(33, 'Ethan', 'Dawn', 'diam.nunc@Proinvel.ca', 'ICX33ORY4RQ', ''),
+(34, 'Mary', 'Lana', 'litora@Integer.org', 'IGF91CGL5EV', ''),
+(35, 'Allegra', 'Abraham', 'non@urnanecluctus.com', 'MEK98BOK1VP', ''),
+(36, 'Yvonne', 'Harlan', 'eu.dolor.egestas@aliquamiaculis.com', 'SBW22RGH8JF', ''),
+(37, 'Finn', 'Sheila', 'In.ornare@Mauris.com', 'JDT59JNI2TX', ''),
+(38, 'Bernard', 'Chandler', 'odio.Phasellus@velit.com', 'SBS54XWH5JO', ''),
+(39, 'Brock', 'Mufutau', 'lorem.luctus.ut@afacilisis.edu', 'UYN06LEW0IX', ''),
+(40, 'Solomon', 'Ralph', 'sem.ut@semmolestie.com', 'KAP93ECB0IM', ''),
+(41, 'Jason', 'Kelly', 'urna@Nullam.edu', 'MNZ58WKQ5ID', ''),
+(42, 'Minerva', 'Martina', 'Donec.est@mattis.edu', 'KPD49QYM9IN', ''),
+(43, 'Dominique', 'Imogene', 'et.tristique.pellentesque@blanditat.org', 'HXH72KMW9ED', ''),
+(44, 'Iola', 'Dacey', 'vestibulum.massa@interdumlibero.ca', 'ZYK82YDR9YC', ''),
+(45, 'Indigo', 'Leilani', 'ac.libero@vitaepurusgravida.org', 'HQK27ORA0RJ', ''),
+(46, 'Avye', 'Marshall', 'lacus@molestie.com', 'ZJY92BJW4RT', ''),
+(47, 'Laith', 'Daphne', 'felis@sapienimperdiet.ca', 'FYZ26JJH6JI', ''),
+(48, 'Tamara', 'Marvin', 'mollis.vitae@utpellentesque.org', 'QPK02EQN2VE', ''),
+(49, 'John', 'Regina', 'lectus.quis@sociisnatoquepenatibus.edu', 'DBI84RSC0YR', ''),
+(50, 'Derek', 'Jonah', 'neque.sed@NullaaliquetProin.edu', 'CAR38VUQ2FK', ''),
+(51, 'Tiger', 'Dustin', 'mauris.Integer@Integerurna.com', 'HCM20EON4KL', ''),
+(52, 'Tanner', 'Kirestin', 'at.risus@ipsum.ca', 'BQK28VFD3ET', ''),
+(53, 'Peter', 'Kiayada', 'elit@enim.ca', 'EWJ62VOV3MB', ''),
+(54, 'Candice', 'Darrel', 'magna@Proinvelit.org', 'LPT87MPH5KI', ''),
+(55, 'Ruby', 'Dorothy', 'auctor.velit@blanditenim.ca', 'MTV72WYM9TC', ''),
+(56, 'Gray', 'Glenna', 'vel.mauris@egestas.org', 'PZA04IXR8PI', ''),
+(57, 'Yasir', 'Latifah', 'neque.Morbi.quis@enimEtiam.ca', 'GOK22MOQ0NT', ''),
+(58, 'Jelani', 'Dara', 'est@Mauris.ca', 'OIO39XIN6BX', ''),
+(59, 'Edward', 'Yvonne', 'elit@aceleifend.edu', 'WYT94MKS8WZ', ''),
+(60, 'Daniel', 'Phyllis', 'Nunc.mauris@et.org', 'FGB92ZFH1AR', ''),
+(61, 'Jordan', 'Brianna', 'diam.vel@maurisSuspendissealiquet.ca', 'IXQ17PKN1ZW', ''),
+(62, 'Alden', 'Joy', 'Class@miAliquam.org', 'NEV61MDH0PE', ''),
+(63, 'Kaitlin', 'Joseph', 'sollicitudin.orci@tristique.edu', 'TBS80OXN6DB', ''),
+(64, 'Logan', 'Nevada', 'Sed.nec@Curae;Phasellus.ca', 'AJG09KOL9ZP', ''),
+(65, 'Leah', 'Candace', 'convallis@mauriselitdictum.org', 'LBD02ESX7ML', ''),
+(66, 'Adena', 'Hunter', 'feugiat.placerat@musProinvel.com', 'CCU00JPF6FC', ''),
+(67, 'Simone', 'Shaeleigh', 'velit.justo@natoquepenatibuset.edu', 'EJB98NYF9IX', ''),
+(68, 'Karina', 'Miriam', 'Nullam.suscipit.est@Integeraliquam.org', 'VPW58YJR5HQ', ''),
+(69, 'Cairo', 'Isaac', 'ac.mattis.semper@idnunc.com', 'ASN00LNT4DF', ''),
+(70, 'Ina', 'Rae', 'semper@ridiculusmus.ca', 'PXN01EGQ0SD', ''),
+(71, 'Quentin', 'Ali', 'hendrerit@semmolestie.org', 'ARH48MWP5XF', ''),
+(72, 'Alexa', 'Porter', 'accumsan.neque.et@laoreet.edu', 'MDS48WGW0TL', ''),
+(73, 'Carter', 'Dylan', 'neque.sed@commodotincidunt.org', 'BTG56MOJ3MR', ''),
+(74, 'Clare', 'Leandra', 'nascetur@iaculis.edu', 'DXB16NIX9EM', ''),
+(75, 'Serena', 'Sheila', 'non.magna@quis.edu', 'PQP91GDS4LA', ''),
+(76, 'Arden', 'Mallory', 'lobortis@nonfeugiatnec.org', 'FQM18YAR4PU', ''),
+(77, 'Kameko', 'Renee', 'aliquet.sem@aauctor.com', 'QLZ08ZDN1CF', ''),
+(78, 'Ivory', 'Marvin', 'mollis.Integer@justo.ca', 'BQO52IAA7EK', ''),
+(79, 'Alexa', 'Inga', 'Sed@Aliquamvulputate.com', 'KGW53BZZ4BC', ''),
+(80, 'Bertha', 'Wade', 'in@loremfringilla.ca', 'VRZ58JOH4AS', ''),
+(81, 'Kaye', 'Georgia', 'Donec@bibendum.edu', 'HPC76EWP3PC', ''),
+(82, 'acqueline', 'Kevyn', 'mus.Donec.dignissim@dictumeleifend.org', 'WZV20NUJ5PO', ''),
+(83, 'Colby', 'Mollie', 'eu.lacus.Quisque@Etiamimperdietdictum.com', 'YMB20DHP0YC', ''),
+(84, 'James', 'Jolene', 'faucibus.ut.nulla@nostra.com', 'VBU46JQI1LC', ''),
+(85, 'Quinn', 'Talon', 'cubilia@lectusjustoeu.com', 'BOX05AOA9ZI', ''),
+(86, 'Denton', 'Ivory', 'mus@dignissim.ca', 'PFI76KON4UL', ''),
+(87, 'Orli', 'Audra', 'massa.Quisque@tellusjustosit.ca', 'ZEV91EGP3OW', ''),
+(88, 'Steven', 'Kimberley', 'a.neque@Duissitamet.org', 'HUG75RLQ2TQ', ''),
+(89, 'Roary', 'Lareina', 'arcu.Sed@enimcommodo.edu', 'PUS83OTX0VU', ''),
+(90, 'Dillon', 'Kessie', 'aliquam@tristiquealiquetPhasellus.org', 'MFH69XMN4LY', ''),
+(91, 'Aretha', 'Kuame', 'cursus.et@libero.edu', 'WED80YDO9FI', ''),
+(92, 'Quamar', 'Scarlet', 'nec.leo.Morbi@odio.ca', 'AYM43LOY9KF', ''),
+(93, 'Hakeem', 'May', 'Proin@duiFuscediam.org', 'TCD73LND2MG', ''),
+(94, 'Nayda', 'Ian', 'pede@sagittisNullamvitae.ca', 'IIY27DQK2FF', ''),
+(95, 'Camille', 'Portia', 'ad.litora.torquent@penatibusetmagnis.org', 'IES56ZGB2WZ', ''),
+(96, 'Adria', 'Susan', 'sociis@dictumauguemalesuada.edu', 'YFL13RHE5OA', ''),
+(97, 'Doris', 'Caldwell', 'porttitor.interdum@risusNuncac.edu', 'WEE10EDY4LT', ''),
+(98, 'Zorita', 'Kasper', 'Aliquam.adipiscing.lobortis@metusInlorem.org', 'QDT27UMW1YS', ''),
+(99, 'Arsenio', 'Armand', 'Proin.nisl@quis.com', 'KVG83ZWV6BU', ''),
+(100, 'Josephine', 'Maxwell', 'id.sapien@egetmagna.com', 'FDE31XLE5RL', ''),
+(101, 'Waqas', 'Mushtaq', 'mian.waqas.mushtaq@gmail.com', 'd0970714757783e6cf17b26fb8e2298f', 'BTRbwDrv_Blue hills.jpg'),
+(102, 'asdf', 'asdf', 'just4own@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '9FaZi8p5_Water lilies.jpg'),
+(103, 'asdf', 'asdf', 'asdf@lkasdf.com', 'e10adc3949ba59abbe56e057f20f883e', '9WlKdeVz_Winter.jpg'),
+(104, 'Jenny', 'Anderson', 'fashionventuresinc@gmail.com', '0cc175b9c0f1b6a831c399e269772661', 'G8dW9Y4V_Aliceoliviacomboshirtdress53110.jpg'),
+(105, 'waqas', 'mushtaq', 'asdf@ac', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(106, 'waqas', 'mushtaq', 'asdf@acss', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(107, 'waqas', 'mushtaq', 'asdf@acww', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(108, 'waqas', 'mushtaq', 'asdf@acwere', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(109, 'waqas', 'mushtaq', 'asdf@acss.com', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(110, 'asdf', 'asdf', 'asfd@asdf', 'e10adc3949ba59abbe56e057f20f883e', NULL),
+(111, 'waqas', 'asdf', 'asdf@assscss.com', 'f943207857979c7b53907d47d439a622', NULL),
+(112, 'waqas', 'mushtaq', 'asdf@acssssss.com', 'e10adc3949ba59abbe56e057f20f883e', 'RvHVsrLN_Sunset.jpg'),
+(113, 'Jenny', 'andersons', 'tv@hot.com', '92eb5ffee6ae2fec3ad71c777531578f', NULL);

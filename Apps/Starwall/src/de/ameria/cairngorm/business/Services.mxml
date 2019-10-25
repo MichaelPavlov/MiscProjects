@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cairngorm:ServiceLocator xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:cairngorm="http://www.adobe.com/2006/cairngorm">
+	<mx:Script>
+		<![CDATA[
+			import de.ameria.cairngorm.model.StarwallModelLocator;
+			
+			[Bindable]
+			private var model:StarwallModelLocator = StarwallModelLocator.getInstance();
+		]]>
+		
+	</mx:Script>
+	
+    <mx:HTTPService id="serviceMainData" 
+    	url="{model.MAIN_DATA_URL}" />    
+</cairngorm:ServiceLocator>

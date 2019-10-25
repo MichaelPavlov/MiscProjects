@@ -1,0 +1,125 @@
+﻿<stories>
+	<!-- To add or remove a story , copy/paste or delete a <story_data> node -->
+	<story_data>
+		<headline>Les jardins du Plessis-au-Bois (Oise)</headline>
+		<thumb>News/2000-2009/GFX/14s.jpg</thumb>
+		<date>2003-2010</date>
+		<short_description><![CDATA[Le principe du projet a été motivé par la réinterprétation d'un lieu marqué par l'emprunte médiévale et l'esprit de la Renaissance sur la façade orientale.]]></short_description>
+		<full_story><![CDATA[<font size = "11">Le principe du projet a été motivé par la réinterprétation contemporaine d'un lieu à l’architecture marquée par une trace médiévale et une empreinte de l'esprit Renaissance sur la façade orientale. Deux axes de travail se sont dégagés : la fragmentation de l'espace lié au jardin clos et l'évocation de l’humanisme de la Renaissance en Italie quant à l’investigation sur l'origine des choses et de l'homme. Cette réflexion allégorique allait fondamentalement de pair avec le processus de création de Diane de Longuemar, artiste sculpteur, et offrait une identification forte entre le lieu et ses propriétaires.Tout en tentant de préserver le jardin d’une idée thématique convenue, la composition a été travaillée comme la représentation d'une cosmogonie « un jardin de la création » traduisant le mythe fondateur de notre culture occidentale : le livre de la Genèse.</font>]]></full_story>
+		<website><![CDATA[<font size = "13" color="0xC8B933" align="right"><u></u></font>]]></website>
+		<story_items>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/14thumb.jpg"/>
+				<image src="News/2000-2009/GFX/14.jpg"/>
+				<text><![CDATA[<font size = "11">Some text here</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/15thumb.jpg"/>
+				<image src="News/2000-2009/GFX/15.jpg"/>
+				<text><![CDATA[<font size = "11">Avant les travaux, un espace sans structure ponctué de quelques arbres.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/17thumb.jpg"/>
+				<image src="News/2000-2009/GFX/17.jpg"/>
+				<text><![CDATA[<font size = "11">La quadrature de la terre en fruits rouges</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/19thumb.jpg"/>
+				<image src="News/2000-2009/GFX/19.jpg"/>
+				<text><![CDATA[<font size = "11">Les coulisses de hêtre longeant la basilique.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/20thumb.jpg"/>
+				<image src="News/2000-2009/GFX/20.jpg"/>
+				<text><![CDATA[<font size = "11">Potager au 36 carrés</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/21thumb.jpg"/>
+				<image src="News/2000-2009/GFX/21.jpg"/>
+				<text><![CDATA[<font size = "11">Le canal</font>]]></text>
+			</story_item>
+		</story_items>
+	</story_data>
+	<story_data>
+		<headline>Les jardins de la Grande mosquée de Paris</headline>
+		<thumb>News/2000-2009/GFX/3s.jpg</thumb>
+		<date>2006-2009</date>
+		<short_description><![CDATA[Les jardins de la mosquée de Paris avaient été conçus comme un havre de paix préservé, surplombant la ville. La première gravure de ces lieux, encore à construire, témoigne de ce monde clos où les silhouettes des cyprès présageaient de jardins suspendus élancés vers le ciel et protégés comme des joyaux...]]></short_description>
+		<full_story><![CDATA[<font size = "11">Inaugurées en 1926, les jardins de la mosquée de Paris on été conçus comme un havre de paix préservé, surplombant la ville. La première gravure des lieux, encore à construire, témoignait d’un monde clos où les silhouettes des cyprès présageaient de jardins suspendus élancés vers le ciel et protégés comme des joyaux. Le projet, précédé d’une étude historique, souhaitait s’approcher de cette vision première et s’inscrire dans le temps plutôt que reconstituer la réalisation d'origine, distante de l’esprit arabo-andalou de l’édifice. A la fin des différentes tranches de travaux de restauration, l’unité des lieux reposera sur les lignes verticales de cyprès accompagnant de leur pureté la force de l’architecture et la spiritualité des lieux. Celles-ci viendront rythmer des plantations à l’esprit méditerranéen, plus ornementales pour la cour d’honneur, plus rurales et fruitières pour les jardins latéraux. La géométrie sera soulignée de bordures de buis et subtilement rompue par des plantations aléatoires à la manière des jardins hispano-moresques. Le principe des parterres encaissés par rapport aux cheminements en zellige sera reconduit afin de rappeler l’importance de l’hydraulique et de la préservation de l’eau dans les jardins arabo-andalous.</font>]]></full_story>
+		<website><![CDATA[<font size = "13" color="0xC8B933" align="right"><u>http://www.mosquee-de-paris.org</u></font>]]></website>
+		<story_items>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/3thumb.jpg"/>
+				<image src="News/2000-2009/GFX/3.jpg"/>
+				<text><![CDATA[<font size = "11">Some text here</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/1thumb.jpg"/>
+				<image src="News/2000-2009/GFX/1.jpg"/>
+				<text><![CDATA[<font size = "11">Plan de masse du projet 2008</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/2thumb.jpg"/>
+				<image src="News/2000-2009/GFX/2.jpg"/>
+				<text><![CDATA[<font size = "11">Cour d’honneur Géométrie rompue de généreux désordres arbustes colorés et parfumés se détachant sur un lit de lierre semé d’hémérocalles et de crocosmia.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/4thumb.jpg"/>
+				<image src="News/2000-2009/GFX/4.jpg"/>
+				<text><![CDATA[<font size = "11">Terrasse Ponctuation de pots autour des bassins à la manière des jardins hispano-moresques.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/5thumb.jpg"/>
+				<image src="News/2000-2009/GFX/5.jpg"/>
+				<text><![CDATA[<font size = "11">Verticales de cyprès et grosses roses parfumées aux tonalités vives et multicolores.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/6thumb.jpg"/>
+				<image src="News/2000-2009/GFX/6.jpg"/>
+				<text><![CDATA[<font size = "11">Graphisme des cordyline et senteurs d’agrumes.</font>]]></text>
+			</story_item>
+		</story_items>
+	</story_data>
+	
+	
+	<story_data>
+		<headline>Les jardins du Centre culturel français d’Izmir (Turquie)</headline>
+		<thumb>News/2000-2009/GFX/7s.jpg</thumb>
+		<date>2006</date>
+		<short_description><![CDATA[Le jardin du Centre culturel d’Izmir se déploie au plein centre de la ville, autour d’un bâtiment construit dans les années 1940 dans une architecture assez sobre et rigoureuse. Le projet de rénovation a été basé sur quelques principes simples...]]></short_description>
+		<full_story><![CDATA[<font size = "11">Le jardin du Centre culturel d’Izmir se déploie au plein centre de la ville, autour d’un bâtiment construit dans les années 1940 dans une architecture assez sobre et rigoureuse. Le projet de rénovation a été basé sur quelques principes simples :<br/><li>Établir une composition générale à la fois forte et lisible qui convienne à la régularité architecturale et unifie les éléments hétérogènes bâtis (restaurants et annexes diverses).</li><li>Donner une visibilité plus forte au Centre culturel sur l’avenue et ménager des transparences et des rythmes.</li><li>Suggérer l’envie de la promenade par la création de différents jardins aux ambiances et identités propres : un jardin de roses, un autre d’agrumes, un espace de fraîcheur orné de grands arbres, de bambous et d’acanthes, ainsi qu’un jardin d’oliviers autour du restaurant au nord.</li><li>Mettre en place un cheminement esthétique correspondant à la fréquentation des lieux.</li><li>Préserver les arbres de qualité tout en enrichissant la palette végétale.</li></ul><p/></font>]]></full_story>
+		<website><![CDATA[<font size = "13" color="0xC8B933" align="right"><u>http://www.frkultur.com/indexfr.html</u></font>]]></website>
+		<story_items>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/7thumb.jpg"/>
+				<image src="News/2000-2009/GFX/7.jpg"/>
+				<text><![CDATA[<font size = "11">Some text here.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/9thumb.jpg"/>
+				<image src="News/2000-2009/GFX/9.jpg"/>
+				<text><![CDATA[<font size = "11">Au sud, trois jardins structurés : jardin de roses et d’agrumes reliés en équerre par une géométrie de triangles de buis.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/10thumb.gif"/>
+				<image src="News/2000-2009/GFX/10.gif"/>
+				<text><![CDATA[<font size = "11">Gros travaux de coupe d’arbres et de terrassement pour constituer un écrin et unifier des éléments disparates.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/11thumb.jpg"/>
+				<image src="News/2000-2009/GFX/11.jpg"/>
+				<text><![CDATA[<font size = "11">A l’est, un lieu de respiration à l’ombre d’un couple de vieux mûriers.<br/>Nivellement en ondes souples et luxuriance d’acanthes et de bambous.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/12thumb.gif"/>
+				<image src="News/2000-2009/GFX/12.gif"/>
+				<text><![CDATA[<font size = "11">Des bambous et acanthes en rivière forment, avec des talus en vagues de pittosporum une transition vers le restaurant.</font>]]></text>
+			</story_item>
+			<story_item>
+				<thumb src="News/2000-2009/GFX/13thumb.jpg"/>
+				<image src="News/2000-2009/GFX/13.jpg"/>
+				<text><![CDATA[<font size = "11">Campagne méditerranéenne jardinée autour d’oliviers.</font>]]></text>
+			</story_item>
+		</story_items>
+	</story_data>
+</stories>

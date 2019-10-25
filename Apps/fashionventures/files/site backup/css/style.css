@@ -1,0 +1,67 @@
+#container {
+	width: 95%;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+#top_bar {
+	height: 35px;
+	width: 100%;
+	margin-left: auto ;
+	margin-right: auto ;
+	background: #FF65CE;
+	padding-top: 10px;
+}
+#top_bar a {
+	margin-left: 10px;
+	font-weight:bold;
+	color:#000000;
+}
+#right {
+	float: right;
+	background: #CC2500;
+	width: 22%;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+#right img {
+	margin: 10px 5px 10px 10px;
+	float: left;
+	width: 125px;
+	height: 93px;
+	border: none;
+}
+#right h3 {
+	margin: 10px;
+}
+#center {
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+#center p {
+	margin-left: 40%;
+}
+#center p input {
+	position: absolute;
+	left: 46%;
+}
+#center fieldset {
+	padding-top: 10px;
+	height: 250px;	
+}
+#follow_button{
+	width: 100%;
+	text-align: center;
+}
+#follow_button a{
+	width: 50%;
+	text-align: center;
+	font-size: 18px;
+}
+#friends img {
+	margin: 5px;
+	float: left;
+	width: 40px;
+	height: 40px;
+}

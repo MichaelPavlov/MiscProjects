@@ -1,0 +1,44 @@
+итак
+нужно сделать "дубликат" приложения http://apps.facebook.com/yoville/index.php
+
+1) выбираем пол и вводим свой ник
+2) создаем  аватара
+две основных категории:
+2,1) edit face -- eyes, mouth
+2,2) change clothes - и тут есть уже shirts, shoes
+
+
+3) юзер нажимает на кнопку Finish
+4) появляется окно в котором юзер заполняет поля (см. http://oligarch.us/flash/m5zn/create_avatar.html)
+5) нажимает Send и все как в http://oligarch.us/flash/m5zn/create_avatar.html  --- отслылается в базу данных и показывается на экран его аватар  (необходимые файлы вышлю)
+
+
+графу надо безжаластно стянуть)
+
+чтоб стянуть  одежду нужно:
+1)залогинится на facebook.com
+2) и затем зайти по ссылке http://apps.facebook.com/yoville/index.php
+
+данные для мужской одежды:
+email: ad-elaana@hotmail.com 
+password: 1512005
+
+данные для женской одежды:
+saudimaster2004@hotmail.com 
+1512005
+
+
+
+кнопки rotate у нас не будет :) 
+
+URL
+
+male
+
+http://yoload.presidiomedia.com/fb/gamecontrol/get_appearance_items.php?player=6688629&gender=1
+http://yoload.presidiomedia.com/fb/gamecontrol/get_appearance_items.php?player=6688629&gender=2
+
+female:
+
+http://yoload.presidiomedia.com/fb/gamecontrol/get_appearance_items.php?player=105746897&gender=1
+http://yoload.presidiomedia.com/fb/gamecontrol/get_appearance_items.php?player=105746897&gender=2

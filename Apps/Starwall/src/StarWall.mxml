@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:business="de.ameria.cairngorm.business.*"
+	xmlns:control="de.ameria.cairngorm.control.*"
+	xmlns:local="*"
+	xmlns:view="de.ameria.cairngorm.view.*"
+	layout="absolute"
+	applicationComplete="onCreationComplete()"
+	frameRate="31"
+	width="1024" height="768">
+	
+	<mx:Script>
+		<![CDATA[
+			import de.ameria.cairngorm.event.GetParticipantsEvent;
+			import com.adobe.cairngorm.control.CairngormEvent;
+			import com.adobe.cairngorm.control.CairngormEventDispatcher;
+			import de.ameria.cairngorm.model.StarwallModelLocator;
+			
+			[Bindable]
+			public var model:StarwallModelLocator = StarwallModelLocator.getInstance();
+			
+			private function onCreationComplete():void {				
+				CairngormEventDispatcher.getInstance().dispatchEvent(new CairngormEvent(GetParticipantsEvent.GET_PARTICIPANTS_DATA))				
+				stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
+				stage.addEventListener(Event.ENTER_FRAME, thisEnterFrameHandler);
+			}
+			
+			private function thisEnterFrameHandler(event:Event):void {
+				if (stage.displayState != StageDisplayState.FULL_SCREEN_INTERACTIVE) {
+					stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
+				}
+			}
+		]]>
+	</mx:Script>
+	<!-- ========================================================================== -->
+
+	<!-- the ServiceLocator where we specify the remote services -->
+	<business:Services id="services" />
+	
+	<!-- the FrontController, containing Commands specific to this appliation -->
+	<control:StarwallController id="controller" />
+	
+	<!-- ========================================================================== -->
+	
+	<view:SearchPeoplePanel id="searchPeoplePanel" x="61" y="{this.height/4}"/>
+	
+</mx:WindowedApplication>

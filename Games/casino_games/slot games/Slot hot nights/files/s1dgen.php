@@ -40,59 +40,23 @@ function Gen() {
 
 function countLine($a, $b, $c) {
 	global $win, $bet;
-	if (($a == $b) && ($b == $c)) {
-		setWinByNum($a);
-	} elseif (($a == $b) && ($c == 2) || ($b == $c) && ($a == 2)) {
-		// wild - any 2 eq symbols
-		setWinByNum($b);
-	} elseif (($a == $c) && ($b == 2)) {
-		// wild - any 2 eq symbols	
-		setWinByNum($c);
-	} elseif (($a == $c) && ($a == 2)) {
-		// wild - any - wild
-		setWinByNum($b);
-	} elseif (($b == $c) && ($b == 2)) {
-		// any - wild - wild
-		setWinByNum($a);
-	} elseif (($b == $a) && ($b == 2)) {
-		// wild - wild - any
-		setWinByNum($c);
+	if ( ($a == $b) && ($b == $c) ) {
+		switch ($a) {
+			case 1: $win = 1000 * $bet; break;
+			case 2: $win = 200 * $bet; break;
+			case 3: $win = 100 * $bet; break;
+			case 4: $win = 30 * $bet; break;
+			case 5: $win = 20 * $bet; break;
+			case 6: $win = 10 * $bet; break;
+			case 7: $win = 10 * $bet; break;
+		}
 	} else {
-		
-		if ($a == 2 && $b == 2 && $c != 2)								   						{ setWinByNum($c); }  //wild - wild - any symbol
-		elseif ($a == 2 && $c == 2 && $b != 2)								   					{ setWinByNum($b); }  //wild - wild - any symbol
-		elseif ($b == 2 && $c == 2 && $a != 2)								   					{ setWinByNum($a); }  //wild - wild - any symbol
-		
-		elseif ($a == 2 && $c == 3 && ($b < 2 || $b > 3))			   							{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-		elseif ($a == 2 && $b == 3 && ($c < 2 || $c > 3))			   							{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-			
-		elseif ($b == 2 && $a == 3 && ($c < 2 || $c > 3))		   								{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-		elseif ($b == 2 && $c == 3 && ($a < 2 || $a > 3))		   								{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-		
-		elseif ($c == 2 && $a == 3 && ($b < 2 || $b > 3))		   								{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-		elseif ($c == 2 && $b == 3 && ($a < 2 || $a > 3))		   								{ $win = 5 * $bet; }  //wild - S - any symbol (like any two S)
-		
-		elseif ($a == 2 && $b > 3 && $b < 7 && $c > 3 && $c < 7 && $c != $b) 					{ $win = 5 * $bet; } //wild - anygem - anygem
-		elseif ($a > 3 && $a < 7 && $b == 2 && $c > 3 && $c < 7 && $c != $a) 					{ $win = 5 * $bet; } //anygem - anygem - wild
-		elseif ($a > 3 && $a < 7 && $b > 3 && $b < 7 && $c == 2 && $a != $b) 					{ $win = 5 * $bet; } //anygem - wild - anygem
-		
-		elseif ($a > 3 && $a < 7 && $b > 3 && $b < 7 && $c > 3 && $c < 7 && $a != $b && $b != $c && $a != $c )	{ $win = 5 * $bet; } //anygem - anygem - anygem
-		
-		elseif (($a == $b) && ($b == 3) || ($b == $c) && ($b == 3) || ($a == $c) && ($a == 3)) 	{ $win = 5 * $bet; } //Any 2 S
-		elseif (($a == 3) || ($b == 3) || ($c == 3)) 											{ $win = 1 * $bet; } //Any 1 S   		
-	}
-}
-
-function setWinByNum($num) {
-	global $win, $bet;
-	switch ($num) {
-		case 1: $win = 1000 * $bet; break;
-		case 2: $win = 200 * $bet; break;
-		case 3: $win = 100 * $bet; break;
-		case 4: $win = 30 * $bet; break;
-		case 5: $win = 20 * $bet; break;
-		case 6: $win = 10 * $bet; break;
-		case 7: $win = 10 * $bet; break;		
+		if ( ($a == $b) && ($b == 3) || ($b == $c) && ($b == 3) || ($a == $c) && ($a == 3)) { 
+			$win = 5 * $bet; 
+		} //2x
+		elseif (($a == 3) || ($b == 3) || ($c == 3)) {
+			$win = $bet;
+		} //1x		
 	}
 }
 
@@ -117,15 +81,7 @@ $bet = sprintf ("%01.2f", $bet);
 	$n6=Gen();
 	$n7=Gen();
 	$n8=Gen();
-	$n9 = Gen();	
-	
-	
-	//testing
-	/*$n4=2;
-	$n5=3;
-	$n6=5;*/
-	
-	
+	$n9=Gen();
 //remove 2 blank in a row
 	if (($n1==0)&&($n4==0)){$n1=Gen();}
 	if (($n4==0)&&($n7==0)){$n7=Gen();}
